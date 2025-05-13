@@ -1,0 +1,154 @@
+/* OtpVerification.css */
+.otp-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .otp-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .phone-input-container, .otp-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .phone-field {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .country-code {
+    background-color: #f5f5f5;
+    padding: 12px 10px;
+    border-right: 1px solid #ddd;
+    color: #333;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 12px 16px;
+    background-color: #4a69ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #3a56e8;
+  }
+  
+  button:disabled {
+    background-color: #b2b2b2;
+    cursor: not-allowed;
+  }
+  
+  button.loading {
+    opacity: 0.8;
+  }
+  
+  button.secondary {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  button.secondary:hover:not(:disabled) {
+    background-color: #eaeaea;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button-group button.primary {
+    flex: 2;
+  }
+  
+  .button-group button.secondary {
+    flex: 1;
+  }
+  
+  .text-button {
+    background: none;
+    border: none;
+    color: #4a69ff;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 14px;
+    width: fit-content;
+    align-self: center;
+  }
+  
+  .text-button:hover {
+    color: #3a56e8;
+    background: none;
+  }
+  
+  .error-message {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .success-message {
+    color: #388e3c;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .phone-display {
+    color: #666;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .otp-fields {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+  
+  .otp-fields input {
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .otp-fields input:focus {
+    border-color: #4a69ff;
+    box-shadow: 0 0 0 2px rgba(74, 105, 255, 0.2);
+  }
